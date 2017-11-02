@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>NeighborHood Map</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+	<div id="container">
+		<div class="nav-bar"></div>
+		<div id="search-input-box">
+			<input id="search-text" type="text" placeholder="Search Any Place" data-bind="textInput: searchOption, valueUpdate: 'afterkeydown'">
+			<hr>
+			<div class="list-item">
+			<ul id="results" data-bind="foreach: placeLocation">
+				<li class="place-list" data-bind="text: name, click: bounce"></li>
+			</ul>
+			</div>
+		</div>
+	<div id="map"></div>
+	</div>
+	<script async defer
+   	src = "https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDfvlQNxuo5XdFcnKTO8Lj13F4aAGzKluU&v=3&callback=initMap">
+    </script>
+	<script>
+	</script> 
+	<script src="js/lib/knockout-3.2.0.js"></script>
+	<script src='js/lib/jquery-1.12.0.min.js'></script>
+	<script src="js/app.js"></script>  
+	
+ 
+</body>
+</html>
