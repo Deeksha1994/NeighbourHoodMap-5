@@ -1,6 +1,6 @@
-## NeighbourHood Map Project - Project 5
+# NeighbourHood Map Project - Project 5
 
-# Steps to Use the app:
+## Steps to Use the app:
 1. To view the app download all the files and open index.html in your browser.
 2. Click on the markers on the map to see the detailed information about any place mentioned in the list.
 3. A side bar is present which provides a filter method to search for the places using keywords/names for places.
